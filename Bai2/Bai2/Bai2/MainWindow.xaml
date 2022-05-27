@@ -1,0 +1,27 @@
+﻿<Window x:Class="Bai2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai2"
+        mc:Ignorable="d"
+        Title="HaThiPhuong_2019605499" Height="450" Width="800">
+    <Grid Background="LightYellow">
+        <Label Content="Chương trình tính lương" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontFamily="Times New Roman" FontSize="18" FontWeight="Bold"/>
+        <Label Content="Họ tên" HorizontalAlignment="Left" Margin="109,56,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.9,0.525" Height="30" Width="125"/>
+        <Label Content="Giới tính" HorizontalAlignment="Left" Margin="109,95,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.9,0.525" Height="30" Width="125"/>
+        <Label Content="Số ngày công" HorizontalAlignment="Left" Margin="109,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.9,0.525" Height="30" Width="125"/>
+        <Label Content="Lương" HorizontalAlignment="Left" Margin="109,179,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.9,0.525" Height="30" Width="125"/>
+        <TextBox x:Name="tbHoTen" HorizontalAlignment="Center" Margin="0,59,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Height="24"/>
+        <TextBox x:Name="tbSoNgayCong" HorizontalAlignment="Center" Margin="0,138,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Height="24"/>
+        <TextBox x:Name="tbLuong" HorizontalAlignment="Center" Margin="0,182,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Height="24"/>
+        <RadioButton x:Name="rdNam" Content="Nam" IsChecked="True" GroupName="GT" HorizontalAlignment="Left" Margin="299,101,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdNu" Content="Nữ" GroupName="GT" HorizontalAlignment="Left" Margin="436,103,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbDanhSach" Margin="50,226,50,69"/>
+        <Button x:Name="btnXoa" Content="Xóa dữ liệu" HorizontalAlignment="Left" Margin="109,381,0,0" VerticalAlignment="Top" Height="27" Width="76" RenderTransformOrigin="0.342,0.557" Click="btnXoa_setOnClick"/>
+        <Button x:Name="btnChiTiet" Content="Chi tiết" HorizontalAlignment="Left" Margin="283,381,0,0" VerticalAlignment="Top" Height="27" Width="76" RenderTransformOrigin="0.342,0.557" Click="btnChiTiet_setOnClick"/>
+        <Button x:Name="btnThem" Content="Thêm" HorizontalAlignment="Left" Margin="454,381,0,0" VerticalAlignment="Top" Height="27" Width="76" RenderTransformOrigin="0.342,0.557" Click="btnThem_setOnClick"/>
+        <Button x:Name="btnDong" Content="Đóng" HorizontalAlignment="Left" Margin="615,381,0,0" VerticalAlignment="Top" Height="27" Width="76" RenderTransformOrigin="0.342,0.557" Click="btnDong_setOnClick"/>
+
+    </Grid>
+</Window>
