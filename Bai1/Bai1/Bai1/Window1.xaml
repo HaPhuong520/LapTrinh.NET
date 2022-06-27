@@ -1,0 +1,17 @@
+﻿<Window x:Class="Bai1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bai1"
+        mc:Ignorable="d"
+        Loaded="Win1_Loaded"
+        Title="Window1" Height="400" Width="600">
+    <Grid>
+        <Label Content="Danh sách sinh viên theo điều kiện"
+               FontSize="20" FontWeight="Bold"
+               HorizontalAlignment="Center">
+        </Label>
+        <DataGrid x:Name="dgWindow1" Height="300" Width="500"></DataGrid>
+    </Grid>
+</Window>
